@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import "reset.scss";
+@import "navbar.scss";
 
 :root {
     --green: #90b796;
@@ -16,8 +17,9 @@
 }
 
 html,
-body {
-    background-color: #f7f9f9;
+body,
+svg {
+    background-color: #fff;
     color: var(--font);
 }
 
@@ -25,12 +27,16 @@ a {
     transition: color 0.3s;
 }
 
+svg {
+    transition: fill 0.3s;
+}
+
 a:hover,
 a:active {
     color: var(--link-active);
 }
 
-.logo {
-    max-height: 50px;
-    max-width: 50px;
+a:hover > svg,
+a:active > svg {
+    fill: var(--link-active);
 }
