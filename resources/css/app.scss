@@ -3,3 +3,34 @@
 @tailwind utilities;
 
 @import "reset.scss";
+
+:root {
+    --green: #90b796;
+    --red: #af1b3f;
+    --purple: #473144;
+    --orange: #df9b6d;
+    --pink: #e39695;
+
+    --link-active: var(--green);
+    --font: #0d0b30;
+}
+
+html,
+body {
+    background-color: #f7f9f9;
+    color: var(--font);
+}
+
+a {
+    transition: color 0.3s;
+}
+
+a:hover,
+a:active {
+    color: var(--link-active);
+}
+
+.logo {
+    max-height: 50px;
+    max-width: 50px;
+}

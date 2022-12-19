@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Qisalyde</title>
-    @vite()
+    @vite('resources/ts/app.ts')
 </head>
 <body>
-    @include('navbar')
-
-    <div class="container">
-       @yield('content')
+    <div class="container mx-auto">
+        @include('navbar')
+        @yield('content')
     </div>
 </body>
 </html>
