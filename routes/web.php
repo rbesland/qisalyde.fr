@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\ActivityController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +16,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', [HomeController::class, "show"])->name('home');
+Route::get('/activities', [ActivityController::class, 'show'])->name('activities');
+Route::get('/events', [EventController::class, 'show'])->name('events');
