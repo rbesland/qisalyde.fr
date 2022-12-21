@@ -17570,6 +17570,17 @@
         {
                         \Illuminate\Foundation\Vite::flushMacros();
         }
+                    /**
+         * 
+         *
+         * @see \App\Providers\AppServiceProvider::boot()
+         * @param mixed $asset
+         * @static 
+         */ 
+        public static function image($asset)
+        {
+                        return \Illuminate\Foundation\Vite::image($asset);
+        }
          
     }
      
@@ -18051,6 +18062,28 @@
         public static function hasValidSignatureWhileIgnoring($ignoreQuery = [], $absolute = true)
         {
                         return \Illuminate\Http\Request::hasValidSignatureWhileIgnoring($ignoreQuery, $absolute);
+        }
+         
+    }
+     
+}
+
+    namespace Illuminate\Foundation { 
+            /**
+     * 
+     *
+     */ 
+        class Vite {
+                    /**
+         * 
+         *
+         * @see \App\Providers\AppServiceProvider::boot()
+         * @param mixed $asset
+         * @static 
+         */ 
+        public static function image($asset)
+        {
+                        return \Illuminate\Foundation\Vite::image($asset);
         }
          
     }

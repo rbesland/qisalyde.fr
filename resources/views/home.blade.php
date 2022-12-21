@@ -1,5 +1,5 @@
 @extends('layouts.app')
 
 @section('content')
-    The content of the page
+    <h1>Titre de <span>la page</span></h1>
 @endsection

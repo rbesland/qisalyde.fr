@@ -4,6 +4,9 @@
 
 @import "reset.scss";
 @import "navbar.scss";
+@import "typo.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 :root {
     --green: #90b796;
@@ -12,15 +15,17 @@
     --orange: #df9b6d;
     --pink: #e39695;
 
-    --link-active: var(--green);
+    --background: #f7fafb;
     --font: #0d0b30;
+    --link-active: var(--green);
 }
 
 html,
-body,
-svg {
-    background-color: #fff;
+body {
+    background-color: var(--background);
     color: var(--font);
+    font-family: Inter, sans-serif;
+    font-size: 16px;
 }
 
 a {
