@@ -22,7 +22,9 @@ class EventFactory extends Factory
             'name' => fake()->word(),
             'description' => fake()->text(),
             'teacher_id' => Teacher::factory(),
-            'activity_id' => Activity::factory()
+            'activity_id' => Activity::factory(),
+            'start_at' => fake()->dateTime(),
+            'end_at' => fake()->dateTime(),
         ];
     }
 }
